@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrate India’s 78th Independence Day</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <!-- Modal -->
+    <div class="modal" id="welcomeModal">
+        <div class="modal-content">
+            <h2>Welcome!</h2>
+            <p>Please enter your name to personalize your greeting card.</p>
+            <input type="text" id="name-input-modal" placeholder="Your Name">
+            <button id="modal-submit">Submit</button>
+        </div>
+    </div>
+
+    <!-- Flag Image Section -->
+    <div class="flag-container">
+        <img src="flag.png" alt="Indian Flag">
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Happy 78th Independence Day, India!</h1>
+        <p>Wishing all my Indian brothers and sisters a day filled with pride, unity, and joy as we celebrate our nation's freedom.</p>
+    </header>
+
+    <!-- Greeting Card Section -->
+    <section>
+        <h2>Create and Download Your Personalized Independence Day Greeting Card</h2>
+        <div class="greeting-card-form">
+            <label for="name-input">Enter Your Name:</label>
+            <input type="text" id="name-input" placeholder="Your Name">
+            <button id="generate-card-button">Generate Greeting Card</button>
+        </div>
+        <div class="greeting-card-container" id="greeting-card-container" style="display: none;">
+            <img id="greeting-card-preview" alt="Greeting Card Preview" class="greeting-card-preview">
+            <a id="download-link" class="download-button" download="greeting-card.png">Download Greeting Card</a>
+        </div>
+    </section>
+
+    <!-- Creator Info Section -->
+    <section>
+        <h2>About the Creator</h2>
+        <div class="creator-info">
+            <img src="aaa.jpg" alt="Creator Image">
+            <h3>Abdul Aariz Aman</h3>
+            <p>As we commemorate the 78th Independence Day of our beloved India, I am thrilled to share this tribute with you. May this day inspire us to reflect on our nation's rich heritage and progress. This webpage is a small celebration of our collective spirit and resilience. Here's to celebrating our freedom, embracing unity, and looking forward to a brighter future together. Happy Independence Day to all!</p>
+        </div>
+    </section>
+
+    <!-- Music Player Button -->
+    <div class="start-music" onclick="startMusic()">Play Background Music</div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+        <audio controls loop>
+            <source src="patriotic-175771.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script src="script.js">
+    
+
+</body>
+</html>
